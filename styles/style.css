@@ -16,8 +16,24 @@ html, body {
 	text-align: right;
 }
 
+.text-black {
+	color: #333;
+}
+
 .text-white {
 	color: #FFF;
+}
+
+.background-white {
+	background-color: #FFF;
+}
+
+.background-white:nth-child(even) {
+	background-color: #F6F6F6;
+}
+
+.bottom-border {
+	border-bottom: 1px #333 solid;
 }
 
 .text-white-link, .text-white-link:hover, .text-white-link:focus {
@@ -42,6 +58,18 @@ html, body {
 
 .btn-yellow-transparent:hover .chevron-down-icon, .btn-yellow-transparent:focus .chevron-down-icon {
 	opacity: 1;
+}
+
+.padding-left {
+	padding-left: 33px;
+}
+
+.padding-right {
+	padding-right: 33px;
+}
+
+.break-height  {
+	height: 150px;
 }
 
 /* ---- Modal Styles ---- */
@@ -94,6 +122,18 @@ label {
 
 /* ---- Global Styles ---- */
 
+.w50 {
+	width: 50%;
+}
+
+.pull-right {
+	margin-left: auto;
+}
+
+.pull-left {
+	margin-right: auto;
+}
+
 .hide {
 	display: none !important;
 	z-index: -1;
@@ -117,81 +157,6 @@ html, body {
 	margin: 0;
 	width: 100vw;
 	overflow-x: hidden;
-}
-
-.container-full {
-	max-width: 100%;
-	width: 100%;
-}
-
-.container-flex, .container-flex .row {
-	display: flex;,
-	flex-flow: row wrap;
-	-webkit-flex-flow: row wrap;
-	width: 100%;
-}
-
-.container-flex .column {
-	float: none;
-}
-
-.container-flex .one-third {
-	flex-basis: 33%;
-	-webkit-flex-basis: 33%;
-	flex-grow: 1;
-	-webkit-flex-grow: 1;
-}
-
-.slide-section .content-header {
-	padding: 1em 0;
-}
-
-.slide-section .column {
-	height: 300px;
-	margin: 0;
-	overflow: hidden;
-	position: relative;
-	-webkit-transition: all 0.33s ease-in-out;
-	transition: all 0.33s ease-in-out;
-}
-
-.active-slide .arrow-slide {
-	-webkit-transform: rotate(-180deg);
-	transform: rotate(-180deg);
-}
-
-.arrow-slide {
-	color: #FDCA00;
-	display: inline-block;
-	left: 0;
-	position: relative;
-	-webkit-transition: left 0.25s ease-in-out;
-	transition: left 0.25s ease-in-out;
-}
-
-.toggle-slide,
-.toggle-slide:hover,
-.toggle-slide:focus {
-	text-decoration: none;
-}
-
-.start-slide .column {
-	flex-basis: 0;
-	width: 0;
-}
-
-.start-slide .column.active {
-	flex-basis: 100%;
-	flex-grow: 1;
-	width: 100%;
-}
-
-.toggle-slide:hover .arrow-slide {
-	left: 5px;
-}
-
-.active-slide:hover .arrow-slide {
-	left: -5px;
 }
 
 .full-height-screen {
@@ -288,22 +253,6 @@ html, body {
 	filter: grayscale(100%) brightness(0.5);
 }
 
-.hidden-text-content {
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition: all 0.25s ease;
-	transition: all 0.25s ease;
-}
-
-.active .hidden-text-content {
-	visibility: visible;
-	opacity: 1;
-}
-
-.active-slide {
-	position: absolute;
-	left: -20px;
-}
 
 /* Mailchimp Form */
 #mc_embed_signup {
